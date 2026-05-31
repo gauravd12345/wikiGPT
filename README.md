@@ -4,6 +4,13 @@ A decoder-only transformer built from scratch in PyTorch, trained to hold conver
 
 ---
 
+## Model Weights & Notebook
+
+The trained model weights and full training notebook are available on Kaggle:
+
+- [Training Notebook](https://www.kaggle.com/code/gauravdharmadhikari/wikigpt)
+- [Model Weights](https://www.kaggle.com/models/gauravdharmadhikari/wikigpt)
+  
 ## Architecture
 
 | Hyperparameter | Value |
@@ -15,9 +22,9 @@ A decoder-only transformer built from scratch in PyTorch, trained to hold conver
 | Context Length (block_size) | 128 |
 | Dropout | 0.1 |
 
-The model uses:
+The model follows the standard transformer approach from (Vaswani et. al, 2017):
 - Multi-head causal self-attention with masking
-- Position-wise feedforward networks (d_model → 4×d_model → d_model)
+- Position-wise feedforward networks 
 - Pre-norm residual connections (LayerNorm before each sublayer)
 - Learned positional embeddings
 - GPT-2 tokenizer with custom `<sep>` and `<eos>` special tokens
