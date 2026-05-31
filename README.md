@@ -1,6 +1,6 @@
 # wikiGPT
 
-A decoder-only transformer built from scratch in PyTorch, trained to hold conversations and answer questions. Inspired by the GPT-1 architecture (Radford et al., 2018).
+A decoder-only GPT built from scratch in PyTorch, trained to hold conversations and answer questions. Inspired by the GPT-1 architecture (Radford et al., 2018).
 
 ---
 
